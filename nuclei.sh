@@ -7,14 +7,50 @@ JWT - https://github.com/jasonwubz/weak-jwt
 Nuclei templates - https://github.com/kankburhan/gampung || https://github.com/xm1k3/cent
 paste - https://github.com/carlospolop/Pastos
 
+scripts - https://github.com/edoardottt/lit-bb-hack-tools
+scripts - https://github.com/hahwul/hack-pet
+scripts - https://github.com/1ndianl33t/1ndi-hacks
+scripts - https://github.com/NitescuLucian/hacks
+scripts - https://github.com/m4ll0k/BBTz
+
+
+Shodan Favicon Hash https://github.com/sw33tLie/ugly-scripts/tree/master/go/shodan-favicon-hash | http.favicon.hash:-305179312 | title:Confluence
+proxy - https://github.com/monosans/proxy-list
+
+https://github.com/affix/doopla
+https://github.com/ferreiraklet/airixss
+
+git gist - https://github.com/edivangalindo/gistz
+git members - https://github.com/edivangalindo/gh-members
+git readme - https://github.com/edivangalindo/gh-readmes
+git repos - https://github.com/edivangalindo/gh-repos
+git dockerhub - https://github.com/edivangalindo/dockerhub-ls
+git git - https://github.com/C-Sto/GoGitDumper
+git regexp - https://github.com/gwen001/github-regexp
+git subs - https://github.com/gwen001/github-subdomains
+git endp - https://github.com/gwen001/github-endpoints
 
 
 
 
+sca https://github.com/knqyf263/remic
+subtakover https://github.com/pwnesia/dnstake
 
 
+clouds - https://github.com/Devang-Solanki/recon.cloud
+fuzz - https://github.com/Brum3ns/firefly
+fuzz - https://github.com/ethicalhackingplayground/Zin (SSRF)
+favicon https://github.com/edoardottt/favirecon
+fuzz https://github.com/RedTeamPentesting/monsoon
+links https://github.com/hueristiq/hqurlfind3r
+links https://github.com/vsec7/xurls
+subdomains https://github.com/dhn/spk
+subdomains https://rashahacks.com/guide-to-permutations-subdomain-enumeration/
+subdomains https://github.com/iknowjason/edge
+subdomains https://github.com/hakluke/haktrails
 web analyzer - https://t.me/shadow_group_tg/339
 ssl analyzer - https://github.com/nabla-c0d3/sslyze
+shuffledns - https://github.com/projectdiscovery/shuffledns
 revwhoix https://github.com/Sybil-Scan/revwhoix
 IP-Finder https://github.com/SecLab-CH/IP-Finder
 cero https://github.com/glebarez/cero
@@ -22,10 +58,13 @@ dnsx - https://github.com/projectdiscovery/dnsx
 gotator - https://github.com/Josue87/gotator
 puredns https://github.com/d3mondev/puredns
 security headers - https://github.com/santoru/shcheck
+interesting headers - https://github.com/CasperGN/GoHead
 google dorks - https://github.com/darklotuskdb/sd-goo
 nmap censys - https://github.com/censys/nmap-censys
 zoomeye - https://github.com/mmpx12/zoomeye-cli
 Lepus https://github.com/gfek/Lepus
+xss https://github.com/KathanP19/Gxss
+Google Analytics ID subdomains - https://github.com/dhn/udon
 jsubfinder https://github.com/ThreatUnkown/jsubfinder
 subdomain-brute https://github.com/hazemeldoc/subdomain-brute
 yusub https://github.com/justakazh/yusub/
@@ -74,6 +113,7 @@ FGDS - https://t.me/shadow_group_tg/451
 VHostBrute - https://t.me/shadow_group_tg/450
 Admin Finder - https://t.me/shadow_group_tg/426
 cdncheck - https://github.com/projectdiscovery/cdncheck
+cdncheck - https://github.com/ImAyrix/cut-cdn
 cdn - https://github.com/christophetd/CloudFlair
 cdn - https://github.com/mrh0wl/Cloudmare
 cdn - https://github.com/Dheerajmadhukar/Lilly
@@ -81,19 +121,19 @@ waf https://github.com/EnableSecurity/wafw00f
 git https://github.com/tillson/git-hound
 git https://github.com/nyancrimew/goop
 JS - https://github.com/riza/linx
-kxss - 
-unfurl - 
+kxss - https://github.com/Emoe/kxss
+unfurl - https://github.com/tomnomnom/unfurl
 cloud - https://github.com/jordanpotti/CloudScraper
 cloud - https://github.com/0xsha/CloudBrute
+s3 - https://github.com/hahwul/s3reverse
 MX - https://github.com/musana/mx-takeover
 jexboss - https://github.com/joaomatosf/jexboss
 log4shell - https://github.com/dinosn/hikvision | https://t.me/c/1345592925/1918
 csp recon domains - https://t.me/c/1345592925/2193
-git - https://github.com/deletescape/goop
 extension - https://github.com/kabilan1290/grapX
 akamai - https://github.com/war-and-code/akamai-arl-hack
 uncover - https://github.com/projectdiscovery/uncover
-
+apk sast - https://github.com/wunderwuzzi23/appheist
 
 
 Resolvers:
@@ -115,6 +155,8 @@ ffuf https://t.me/shadow_group_tg/429
 mkpath https://github.com/trickest/mkpath
 gau https://github.com/lc/gau
 waybackurls https://github.com/tomnomnom/waybackurls
+waybackrobots -  https://github.com/vodafon/waybackrobots
+wb https://github.com/riza/wb
 x8 https://github.com/Sh1Yo/x8 | https://t.me/shadow_group_tg/447
 chameleon https://github.com/iustin24/chameleon
 crlfuzz https://github.com/dwisiswant0/crlfuzz
@@ -132,18 +174,38 @@ fuzzing headers - https://github.com/root-tanishq/userefuzz
 403 https://github.com/p0dalirius/ipsourcebypass
 fuzz - https://github.com/projectdiscovery/fuzzing-templates
 traversal - https://github.com/ethicalhackingplayground/tprox
+host header - https://github.com/dwisiswant0/hinject
+clouds - https://github.com/i5nipe/nicloud
+
+
 
 #vulns
 
+Acunetix
+Burp Suite
+Jaeles
+Nmap
+Nessus
+bbFuzzing https://github.com/reewardius/bbFuzzing.txt
 https://gitlab.com/shodan-public/nrich
 https://github.com/s0md3v/Smap
 https://github.com/projectdiscovery/nuclei
 https://github.com/hktalent/scan4all
 https://github.com/zan8in/afrog
 https://github.com/chaitin/xray
+https://github.com/j3ssie/osmedeus
+https://github.com/gobysec/GobyVuls
 https://github.com/reewardius/Shodan
 https://github.com/m4ll0k/BBTz/blob/master/shodanfy.py
+https://github.com/0xn0ne/weblogicScanner - weblogicscanner
+https://github.com/dinosn/hikvision - log4shell
+https://pypi.org/project/vulners/ - vulners [vulners -s target.com
 https://github.com/redhuntlabs/Hunt4Spring
+https://github.com/1ight-2020/Struts2Scanner
+jexboss - https://github.com/joaomatosf/jexboss
+GobyVuls https://github.com/gobysec/GobyVuls
+git httpx -path /.git/config -mc 200 -ms '[remote "origin"]'
+---
 https://github.com/knassar702/lorsrf - ssrf
 https://github.com/KathanP19/gaussrf - ssrf
 https://github.com/ksharinarayanan/SSRFire - ssrf
@@ -156,18 +218,31 @@ https://github.com/0xRadi/oredirecto - openredirect
 https://github.com/defparam/smuggler - smuggler
 https://github.com/BishopFox/h2csmuggler - smuggler
 https://github.com/dolevf/graphql-cop - graphql
-https://github.com/0xn0ne/weblogicScanner - weblogicscanner
 
-
-
-
-
-
-
-
-
-
-
+# Clouds
+https://github.com/reewardius/secrets [!!!!!!]
+https://github.com/gruntwork-io/cloud-nuke
+https://github.com/Static-Flow/CloudCopy
+https://github.com/RhinoSecurityLabs/ccat  [!]
+https://github.com/bishopfox/dufflebag
+https://github.com/prevade/cloudjack
+https://github.com/Skyscanner/whispers
+https://github.com/0xsha/cloudbrute
+https://github.com/koenrh/s3enum [!]
+https://github.com/gwen001/s3-buckets-finder [!]
+https://github.com/RhinoSecurityLabs/GCPBucketBrute [!]
+https://github.com/sa7mon/S3Scanner [!]
+https://github.com/eth0izzle/bucket-stream [!]
+https://github.com/arkadiyt/aws_public_ips [!]
+https://github.com/projectdiscovery/cloudlist [!]
+https://github.com/lateralblast/lunar
+https://github.com/securing/BucketScanner
+https://github.com/0xsha/CloudBrute
+https://github.com/jordanpotti/CloudScraper
+https://github.com/random-robbie/slurp  [!]
+https://github.com/orf/aws-creds-scanner  [!]
+https://github.com/MindPointGroup/cloudfrunt
+https://github.com/disruptops/cred_scanner  [!]
 
 #help
 
@@ -175,7 +250,18 @@ https://github.com/m4ll0k/BBTz/blob/master/swfpfinder.sh
 https://github.com/m4ll0k/BBTz/blob/master/favihash.py - https://t.me/shadow_group_tg/90
 https://github.com/devanshbatham/FavFreak
 JWT - https://github.com/ticarpi/jwt_tool
-Cookie - https://t.me/w3b_pwn/1716
+Cookie Monster - https://t.me/w3b_pwn/1716
+libs - https://github.com/firefart/hijagger
+libs - https://github.com/visma-prodsec/confused
+libs - https://github.com/x1337loser/Dependency-Confusion
+
+
+
+
+
+
+
+
 
 #Notes
 
@@ -185,7 +271,7 @@ site:groups.google.com "$COMPANY"
 https://docs.google.com/presentation/d/1cMSRVlJJ5de6Pyv-09YgzOGS0OYrP6p7ggGl0f42wmw/mobilepresent#slide=id.p
 https://www.youtube.com/watch?v=Pyb5IfQHxik
 https://t.me/c/1345592925/1519
-
-
+https://docs.google.com/spreadsheets/d/1TxNrvaIMRS_dmupcwjwJmXtaFk_lPGE1LzgxPu_7KqA/edit#gid=1308919623
+wadl dumps (like git) https://github.com/dwisiswant0/wadl-dumper
 
 
