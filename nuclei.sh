@@ -14,6 +14,8 @@ scripts - https://github.com/NitescuLucian/hacks
 scripts - https://github.com/m4ll0k/BBTz
 
 
+https://github.com/xnl-h4ck3r/GAP-Burp-Extension
+
 Shodan Favicon Hash https://github.com/sw33tLie/ugly-scripts/tree/master/go/shodan-favicon-hash | http.favicon.hash:-305179312 | title:Confluence
 proxy - https://github.com/monosans/proxy-list
 
@@ -48,6 +50,11 @@ subdomains https://github.com/dhn/spk
 subdomains https://rashahacks.com/guide-to-permutations-subdomain-enumeration/
 subdomains https://github.com/iknowjason/edge
 subdomains https://github.com/hakluke/haktrails
+subdomains https://github.com/expl0itabl3/check_mdi
+subdomains https://github.com/siratsami/crsbf
+subdomains https://github.com/pry0cc/axiom
+subdomains https://sidxparab.gitbook.io/subdomain-enumeration-guide/
+subdomains https://muhdaffa.medium.com/maximizing-the-potential-of-the-subfinder-562fc7e7e9e4
 web analyzer - https://t.me/shadow_group_tg/339
 ssl analyzer - https://github.com/nabla-c0d3/sslyze
 shuffledns - https://github.com/projectdiscovery/shuffledns
@@ -102,10 +109,12 @@ go-dork -  https://github.com/dwisiswant0/go-dork
 masscan -  https://github.com/robertdavidgraham/masscan
 gf patterns -  https://github.com/r00tkie/grep-pattern
 Jira -  https://github.com/MayankPandey01/Jira-Lens - https://t.me/shadow_group_tg/460
+Jira - https://github.com/bcoles/jira_scan
+Jira - https://github.com/0x48piraj/Jiraffe
+Jira - https://github.com/sahadnk72/jecretz
 Confluence - https://t.me/shadow_group_tg/672
 Censys - https://t.me/shadow_group_tg/672
 Agnee - https://github.com/R0X4R/Agnee
-Waymore https://t.me/shadow_group_tg/643
 Httpx - https://t.me/shadow_group_tg/467
 Nmap - https://t.me/shadow_group_tg/465 | https://t.me/c/1345592925/152
 PureDNS - https://t.me/shadow_group_tg/461
@@ -134,7 +143,7 @@ extension - https://github.com/kabilan1290/grapX
 akamai - https://github.com/war-and-code/akamai-arl-hack
 uncover - https://github.com/projectdiscovery/uncover
 apk sast - https://github.com/wunderwuzzi23/appheist
-
+dedupe - https://github.com/xnl-h4ck3r/urless
 
 Resolvers:
 https://github.com/shelld3v/flydns
@@ -156,6 +165,7 @@ mkpath https://github.com/trickest/mkpath
 gau https://github.com/lc/gau
 waybackurls https://github.com/tomnomnom/waybackurls
 waybackrobots -  https://github.com/vodafon/waybackrobots
+waybackurls - https://github.com/xnl-h4ck3r/waymore
 wb https://github.com/riza/wb
 x8 https://github.com/Sh1Yo/x8 | https://t.me/shadow_group_tg/447
 chameleon https://github.com/iustin24/chameleon
@@ -193,12 +203,16 @@ https://github.com/projectdiscovery/nuclei
 https://github.com/hktalent/scan4all
 https://github.com/zan8in/afrog
 https://github.com/chaitin/xray
+https://github.com/six2dez/reconftw
+https://github.com/1N3/Sn1per
+
 https://github.com/j3ssie/osmedeus
 https://github.com/gobysec/GobyVuls
 https://github.com/reewardius/Shodan
 https://github.com/m4ll0k/BBTz/blob/master/shodanfy.py
 https://github.com/0xn0ne/weblogicScanner - weblogicscanner
 https://github.com/dinosn/hikvision - log4shell
+https://github.com/kozmer/log4j-shell-poc - log4shell
 https://pypi.org/project/vulners/ - vulners [vulners -s target.com
 https://github.com/redhuntlabs/Hunt4Spring
 https://github.com/1ight-2020/Struts2Scanner
@@ -256,9 +270,69 @@ libs - https://github.com/visma-prodsec/confused
 libs - https://github.com/x1337loser/Dependency-Confusion
 
 
+# Secrets
+gitleaks
+trufflehog
+git-secrets
+shhgit
+SecretScanner
+ggshield
+DumpsterDiver
+EarlyBirds
+Stacs
+detect-secrets
+tell-me-your-secrets
+gf-secrets.bash
+secrets-patterns-db
+
+
+# SCA tool
+snyk
+owasp dependency checker
+dependabot in github/gitlab
+confused
+retire.js
+
+
+# Docker
+hadolint
+dockle
+deepce
+cis-docker-benchmark.sh
+trivy
+grype
+gorsair
+tracee
+containerd
+botb
+amicontained
+ctrsploit
+CDK
+docker pentesting approach
 
 
 
+
+# Kubernetes
+kube-bench
+kube-hunter
+kubesec
+kubeaudit
+kubesploit
+kubescape
+kube-beacon
+cis-kubernetes-benchmark.sh
+peirates
+
+
+
+# IaC tools
+tfsec
+cfsec
+checkov
+kics
+
+# Cloud Assesment
 
 
 
@@ -273,5 +347,4 @@ https://www.youtube.com/watch?v=Pyb5IfQHxik
 https://t.me/c/1345592925/1519
 https://docs.google.com/spreadsheets/d/1TxNrvaIMRS_dmupcwjwJmXtaFk_lPGE1LzgxPu_7KqA/edit#gid=1308919623
 wadl dumps (like git) https://github.com/dwisiswant0/wadl-dumper
-
 
