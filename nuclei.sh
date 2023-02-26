@@ -38,14 +38,22 @@ git endp - https://github.com/gwen001/github-endpoints
 sca https://github.com/knqyf263/remic
 subtakover https://github.com/pwnesia/dnstake
 
-
+recon https://github.com/m-cetin/webpwn
+secrets https://github.com/denandz/sourcemapper
 clouds - https://github.com/Devang-Solanki/recon.cloud
 fuzz - https://github.com/Brum3ns/firefly
+websockets - https://github.com/PalindromeLabs/STEWS
+websockets - https://github.com/ambalabanov/cswsh-scanner/
 fuzz - https://github.com/ethicalhackingplayground/Zin (SSRF)
 favicon https://github.com/edoardottt/favirecon
 fuzz https://github.com/RedTeamPentesting/monsoon
+brute https://github.com/pry0cc/gorgo
 links https://github.com/hueristiq/hqurlfind3r
 links https://github.com/vsec7/xurls
+recon https://github.com/devanshbatham/Gorecon
+creds https://github.com/c0dejump/CredzCheckr
+creds https://github.com/ztgrace/changeme
+creds https://github.com/InfosecMatter/default-http-login-hunter | https://t.me/w3b_pwn/2038
 subdomains https://github.com/dhn/spk
 subdomains https://rashahacks.com/guide-to-permutations-subdomain-enumeration/
 subdomains https://github.com/iknowjason/edge
@@ -80,6 +88,7 @@ assetfinder https://github.com/tomnomnom/assetfinder
 takeover - https://github.com/haccer/subjack
 takeover - https://github.com/jakejarvis/subtake
 takeover - https://github.com/LukaSikic/subzy
+takeover - https://github.com/hash3liZer/Subrake
 Shodan - https://github.com/SmoZy92/Shodomain
 Shodan - https://github.com/s4hm4d/shodanidb
 dofind https://github.com/kankburhan/dofind/
@@ -172,7 +181,6 @@ chameleon https://github.com/iustin24/chameleon
 crlfuzz https://github.com/dwisiswant0/crlfuzz
 cors https://github.com/s0md3v/Corsy
 cors https://github.com/Shivangx01b/CorsMe
-web socket https://github.com/ambalabanov/cswsh-scanner/
 apache path traversal - https://github.com/imhunterand/ApachSAL
 nginx - https://github.com/stark0de/nginxpwner
 fuzzing headers - https://github.com/root-tanishq/userefuzz
@@ -205,7 +213,7 @@ https://github.com/zan8in/afrog
 https://github.com/chaitin/xray
 https://github.com/six2dez/reconftw
 https://github.com/1N3/Sn1per
-
+https://github.com/blacklanternsecurity/bbot
 https://github.com/j3ssie/osmedeus
 https://github.com/gobysec/GobyVuls
 https://github.com/reewardius/Shodan
@@ -219,7 +227,21 @@ https://github.com/1ight-2020/Struts2Scanner
 jexboss - https://github.com/joaomatosf/jexboss
 GobyVuls https://github.com/gobysec/GobyVuls
 git httpx -path /.git/config -mc 200 -ms '[remote "origin"]'
+
+https://github.com/gustavorobertux/goc OpenAm Vulnerability Checker
+
+
+
+
+
+
+
+
+
+
+
 ---
+
 https://github.com/knassar702/lorsrf - ssrf
 https://github.com/KathanP19/gaussrf - ssrf
 https://github.com/ksharinarayanan/SSRFire - ssrf
@@ -292,6 +314,7 @@ owasp dependency checker
 dependabot in github/gitlab
 confused
 retire.js
+safety
 
 
 # Docker
@@ -324,17 +347,28 @@ kube-beacon
 cis-kubernetes-benchmark.sh
 peirates
 
-
-
 # IaC tools
 tfsec
 cfsec
 checkov
 kics
+terrascan
 
 # Cloud Assesment
 
-
+ScoutSuite
+CloudSploit
+Prowler
+Pacu
+IaC tools
+S3Scanner
+GCPBucketBrute
+Tools For Azure
+Tools For GCP
+CloudFrount
+Cloudjack
+inspec
+cis benchmarks (linux/windows/docker/kubernetes)
 
 
 #Notes
@@ -347,4 +381,3 @@ https://www.youtube.com/watch?v=Pyb5IfQHxik
 https://t.me/c/1345592925/1519
 https://docs.google.com/spreadsheets/d/1TxNrvaIMRS_dmupcwjwJmXtaFk_lPGE1LzgxPu_7KqA/edit#gid=1308919623
 wadl dumps (like git) https://github.com/dwisiswant0/wadl-dumper
-
