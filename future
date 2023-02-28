@@ -1,0 +1,327 @@
+# Fast Check
+/robots.txt , /crossdomain.xml /clientaccesspolicy.xml /sitemap.xml and /.well-known/security.txt /security.txt
+
+
+
+# Dorks
+
+Google Dorks - Cloud Storage:
+
+site:http://s3.amazonaws.com "target[.]com"
+site:http://blob.core.windows.net "target[.]com"
+site:http://googleapis.com "target[.]com"
+site:http://drive.google.com "target[.]com"
+
+https://www.infosecmatter.com/bug-bounty-tips-8-oct-14/#6-github-dorks-for-aws-jira-okta--secrets
+
+
+
+
+
+
+
+
+
+1. Собрать все дорки. По запросам. Найти в твиттере. Особенно интересуют по компаниям дорки и на интересные файлы.
+2. Shodan dorks
+3. Censys dorks
+4. https://github.com/mmpx12/zoomeye-cli
+
+# Github / Gitlab dorks
+
+1. Дорки по компании на СЦМ.
+
+git gist - https://github.com/edivangalindo/gistz
+git members - https://github.com/edivangalindo/gh-members
+git readme - https://github.com/edivangalindo/gh-readmes
+git repos - https://github.com/edivangalindo/gh-repos
+git dockerhub - https://github.com/edivangalindo/dockerhub-ls
+git git - https://github.com/C-Sto/GoGitDumper
+git regexp - https://github.com/gwen001/github-regexp
+git subs - https://github.com/gwen001/github-subdomains
+git endp - https://github.com/gwen001/github-endpoints
+
+
+
+
+
+# Jira & Confluence & Trello
+
+
+
+
+# Subdomain Enum
+https://github.com/projectdiscovery/uncover
+https://t.me/shadow_group_tg/660
+https://t.me/shadow_group_tg/662
+
+# Subdomain Port Scans
+
+
+
+# Subdomain Takeovers
+
+
+
+
+# Default Credentials
+
+
+# Admin Finder
+
+https://t.me/shadow_group_tg/426
+
+
+
+
+# SSL Analyzer
+https://github.com/nabla-c0d3/sslyze
+
+
+# Web-Analyzer
+web analyzer - https://t.me/shadow_group_tg/339
+
+
+
+# Fuzzing
+Быстрый список директорий
+https://t.me/shadow_group_tg/486
+https://t.me/shadow_group_tg/429
+bbFuzzing https://github.com/reewardius/bbFuzzing.txt
+ffuf
+HTTPLoot https://github.com/redhuntlabs/HTTPLoot
+mkpath https://github.com/trickest/mkpath
+chameleon https://github.com/iustin24/chameleon
+fuzz - https://github.com/projectdiscovery/fuzzing-templates
+Если у домена есть перенаправление, фаззить все, даже без перенаправления.
+Есть 403, фаззим 403 папки на файлы и папки далее.
+Есть 403, фаззим у папки параметры.
+403 https://github.com/devploit/dontgo403
+403 https://github.com/hanhanhanz/forothree
+403 https://github.com/daffainfo/bypass-403
+403 https://github.com/channyein1337/403-bypass
+403 https://github.com/lobuhi/byp4xx
+403 https://github.com/p0dalirius/ipsourcebypass
+403? Попробуй найти это в гугл кеше, или в wayback
+apache path traversal - https://github.com/imhunterand/ApachSAL
+nginx - https://github.com/stark0de/nginxpwner
+fuzzing headers - https://github.com/root-tanishq/userefuzz
+TPRox https://github.com/ethicalhackingplayground/tprox
+clouds - https://github.com/i5nipe/nicloud
+https://www.infosecmatter.com/bug-bounty-tips-7-sep-27/#9-recon-leading-to-exposed-debug-endpoints
+
+
+
+# Hidden Params
+1. Нашел папку или ендпоинт, проверь параметры. Затем все найденное в sqlmap, проверить на sqli/xss/ssti/csti.
+x8 https://github.com/Sh1Yo/x8 | https://t.me/shadow_group_tg/447
+
+# Secrets
+https://github.com/eth0izzle/shhgit - Онлайн мониторинг секретов.
+1. Скачать все JS/JSON/JS.MAP файлы, все что найдется.
+2. Сохранить их в папку, на папку натравить кучу сканеров на секреты.
+
+https://github.com/brittonhayes/pillager
+https://github.com/stacscan/stacs
+https://github.com/toufik-airane/leakin
+https://github.com/Skyscanner/whispers
+https://github.com/disruptops/cred_scanner
+https://github.com/arijitdirghanji/Find-Hardcoded
+https://github.com/punk-security/secret-magpie-cli
+gitleaks
+trufflehog
+git-secrets
+SecretScanner
+ggshield
+DumpsterDiver
+EarlyBirds
+detect-secrets
+tell-me-your-secrets
+gf-secrets.bash
+https://t.me/c/1345592925/2127
+```
+> echo "example.com" | waybackurls | grep -iE '\.js'|grep -ivE '\.json'|sort -u  > j.txt
+> cat j.txt | jsleak -pattern regex.txt
+```
+
+```
+grep -r -E 'tokens|keys|api_keys' /path/to/folder
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Как?
+https://t.me/c/1345592925/2512
+https://t.me/c/1345592925/2347
+https://www.infosecmatter.com/bug-bounty-tips-5-aug-17/#2-sensitive-data-leakage-using-json
+
+
+
+
+
+
+
+# Recon URLS
+
+1. waybackurls
+2. gauplus
+3. gau
+4. wayback
+5. waybackrobots -  https://github.com/vodafon/waybackrobots
+6. waybackurls - https://github.com/xnl-h4ck3r/waymore
+7. wb https://github.com/riza/wb
+
+# JWT Checking
+https://github.com/jasonwubz/weak-jwt
+https://github.com/ticarpi/jwt_tool
+
+# Cookie Checking
+cookie-monster https://t.me/w3b_pwn/1716
+
+#CRLF
+
+crlfuzz https://github.com/dwisiswant0/crlfuzz
+
+# CORS
+
+cors https://github.com/s0md3v/Corsy
+cors https://github.com/Shivangx01b/CorsMe
+
+```
+assetfinder fitbit.com | httpx -threads 300 -follow-redirects -silent | rush -j200 'curl -m5 -s -I -H "Origin: evil.com" {} | [[ $(grep -c "evil.com") -gt 0 ]] && printf "\n\033[0;32m[VUL TO CORS] \033[0m{}"' 2>/dev/null
+```
+
+
+# Web-Sockets
+https://github.com/PalindromeLabs/STEWS
+https://github.com/ambalabanov/cswsh-scanner/
+
+# Header Injection
+
+https://github.com/dwisiswant0/hinject
+
+# Errors
+
+https://t.me/shadow_group_tg/508
+https://t.me/shadow_group_tg/667
+
+
+
+
+# Clouds
+Amazon
+GCP
+Azure
+
+1. Хороший вордлист с мутациями.
+2. Сканер на существование.
+3. Сканер на права.
+
+
+https://github.com/gwen001/s3-buckets-finder
+https://github.com/koenrh/s3enum
+https://github.com/sa7mon/S3Scanner
+https://github.com/eth0izzle/bucket-stream
+https://github.com/0xsha/CloudBrute
+https://github.com/RhinoSecurityLabs/GCPBucketBrute
+
+https://github.com/MindPointGroup/cloudfrunt
+
+
+
+
+
+# Nuclei Templates
+https://github.com/kankburhan/gampung
+https://github.com/xm1k3/cent
+
+# Vulnerability Scanners
+git httpx -path /.git/config -mc 200 -ms '[remote "origin"]'
+
+Nrich
+Shodan https://github.com/reewardius/Shodan
+```
+shodan domain example.com | awk '{print $3}' | httpx -silent | nuclei -t /nuclei-templates/
+```
+Acunetix
+Burp Suite
+Nuclei 
+Jaeles
+Afrog
+Xray
+scan4all https://github.com/hktalent/scan4all
+Reconftw https://github.com/six2dez/reconftw
+Bbot https://github.com/blacklanternsecurity/bbot
+weblogicscanner https://github.com/0xn0ne/weblogicScanner
+log4shell https://github.com/kozmer/log4j-shell-poc
+log4shell https://github.com/dinosn/hikvision | https://t.me/c/1345592925/1918
+jexboss https://github.com/joaomatosf/jexboss
+Hunt4Spring https://github.com/redhuntlabs/Hunt4Spring
+Struts2Scanner https://github.com/1ight-2020/Struts2Scanner
+https://github.com/gustavorobertux/goc OpenAm Vulnerability Checker
+GobyVuls https://github.com/gobysec/GobyVuls
+
+```
+shodan domain example.com | awk '{print $3}' | httpx -silent | anew | xargs -I@ jaeles scan -c 100 -s /jaeles-signatures/ -u @
+```
+
+
+
+
+
+# SCA
+
+1. Скачать все проекты организации.
+2. Запустить сканер в каждой папке на поиск dependency hijacking.
+confused https://github.com/visma-prodsec/confused
+remic  https://github.com/knqyf263/remic
+hijagger https://github.com/firefart/hijagger
+Dependency-Confusion https://github.com/x1337loser/Dependency-Confusion
+
+
+# Docker & Kubernetes
+```
+shodan search org:"target" product:"Kubernetes" | awk '{print $3 ":" $2}' | httpx -path /pods -content-length -status-code -title
+shodan search org:"target" port:"10250" | awk '{print $3 ":" $2}' | httpx -path /pods -content-length -status-code -title
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# HELP
+
+https://github.com/0xHJK/dumpall
