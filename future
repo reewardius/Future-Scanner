@@ -14,17 +14,21 @@ site:http://drive.google.com "target[.]com"
 
 https://www.infosecmatter.com/bug-bounty-tips-8-oct-14/#6-github-dorks-for-aws-jira-okta--secrets
 
-
-
-
-
-
-
-
-
 1. Собрать все дорки. По запросам. Найти в твиттере. Особенно интересуют по компаниям дорки и на интересные файлы.
 2. Shodan dorks
+ssl.cert.subject.cn:"company.com"
+ssl:"company.com"
+hostname:google.com,facebook.com
+ssl.cert.subject.cn:google.com -HTTP
+
+
+
+
 3. Censys dorks
+https://t.me/shadow_group_tg/672
+https://t.me/shadow_group_tg/426
+
+
 4. https://github.com/mmpx12/zoomeye-cli
 
 # Github / Gitlab dorks
@@ -47,6 +51,13 @@ git endp - https://github.com/gwen001/github-endpoints
 
 # Jira & Confluence & Trello
 
+Jira -  https://github.com/MayankPandey01/Jira-Lens - https://t.me/shadow_group_tg/460
+Jira - https://github.com/bcoles/jira_scan
+Jira - https://github.com/0x48piraj/Jiraffe
+Jira - https://github.com/sahadnk72/jecretz
+Jira - Nuclei Templates
+Confluence - Nuclei Templates
+
 
 
 
@@ -54,14 +65,77 @@ git endp - https://github.com/gwen001/github-endpoints
 https://github.com/projectdiscovery/uncover
 https://t.me/shadow_group_tg/660
 https://t.me/shadow_group_tg/662
+https://t.me/shadow_group_tg/37
+subdomains Google Analytics ID subdomains - https://github.com/dhn/udon
+subdomains https://t.me/w3b_pwn/1889
+subdomains IP-Finder https://github.com/SecLab-CH/IP-Finder
+subdomains Lepus https://github.com/gfek/Lepus
+subdomains Shodan - https://github.com/SmoZy92/Shodomain
+subdomains Shodan - https://github.com/s4hm4d/shodanidb
+subdomains amass -  https://github.com/OWASP/Amass | amass enum -d vimeo.com | https://t.me/shadow_group_tg/302
+subdomains asnmap - https://github.com/projectdiscovery/asnmap
+subdomains assetfinder https://github.com/tomnomnom/assetfinder
+subdomains censys https://github.com/christophetd/censys-subdomain-finder
+subdomains cero https://github.com/glebarez/cero
+subdomains crt https://github.com/Nickguitar/GoSub
+subdomains csp recon domains - https://t.me/c/1345592925/2193
+subdomains dnsx - https://github.com/projectdiscovery/dnsx
+subdomains dofind https://github.com/kankburhan/dofind/
+subdomains frogy -  https://github.com/iamthefrogy/frogy
+subdomains gotator - https://github.com/Josue87/gotator
+subdomains hakip2host https://github.com/hakluke/hakip2host
+subdomains hakrevdns https://github.com/hakluke/hakrevdns
+subdomains https://github.com/Findomain/Findomain
+subdomains https://github.com/Sybil-Scan/getresolvers
+subdomains https://github.com/dhn/spk
+subdomains https://github.com/expl0itabl3/check_mdi
+subdomains https://github.com/hakluke/haktrails
+subdomains https://github.com/iknowjason/edge
+subdomains https://github.com/pry0cc/axiom
+subdomains https://github.com/shelld3v/flydns
+subdomains https://github.com/shmilylty/OneForAll
+subdomains https://github.com/siratsami/crsbf
+subdomains https://github.com/vortexau/dnsvalidator
+subdomains https://muhdaffa.medium.com/maximizing-the-potential-of-the-subfinder-562fc7e7e9e4
+subdomains https://rashahacks.com/guide-to-permutations-subdomain-enumeration/
+subdomains https://sidxparab.gitbook.io/subdomain-enumeration-guide/
+subdomains knockknock -  https://github.com/harleo/knockknock
+subdomains mksub https://github.com/trickest/mksub
+subdomains pdlist https://github.com/gnebbia/pdlist
+subdomains puredns https://github.com/d3mondev/puredns
+subdomains revwhoix https://github.com/Sybil-Scan/revwhoix
+subdomains shuffledns - https://github.com/projectdiscovery/shuffledns
+subdomains ssl_scrape https://t.me/shadow_group_tg/484
+subdomains subdomain-brute https://github.com/hazemeldoc/subdomain-brute
+subdomains subfinder https://github.com/projectdiscovery/subfinder
+subdomains tld brute https://github.com/Sybil-Scan/TLDbrute
+subdomains tlsx https://github.com/projectdiscovery/tlsx
+subdomains yusub https://github.com/justakazh/yusub/
+subdomains Chaos
+
+```
+#!/bin/bash
+target=$1
+wget -nv -nc http://chaos-data.projectdiscovery.io/$target.zip; unzip $target.zip ; cat *.txt | httpx -silent -threads 300 > $target.alive
+```
+
+
+
 
 # Subdomain Port Scans
+httpx
+https://t.me/shadow_group_tg/486
+https://t.me/shadow_group_tg/660
 
 
 
 # Subdomain Takeovers
+takeover - https://github.com/haccer/subjack
+takeover - https://github.com/jakejarvis/subtake
+takeover - https://github.com/LukaSikic/subzy
+takeover - https://github.com/hash3liZer/Subrake
 
-
+subfinder -d {target} >> domains ; assetfinder -subs-only {target} >> domains ; amass enum -norecursive -noalts -d {target} >> domains ; subjack -w domains -t 100 -timeout 30 -ssl -c ~/go/src/github.com/haccer/subjack/fingerprints.json -v 3 >> takeover ;
 
 
 # Default Credentials
@@ -80,7 +154,7 @@ https://github.com/nabla-c0d3/sslyze
 
 # Web-Analyzer
 web analyzer - https://t.me/shadow_group_tg/339
-
+https://github.com/rverton/webanalyze
 
 
 # Fuzzing
@@ -150,39 +224,10 @@ grep -r -E 'tokens|keys|api_keys' /path/to/folder
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Как?
 https://t.me/c/1345592925/2512
 https://t.me/c/1345592925/2347
 https://www.infosecmatter.com/bug-bounty-tips-5-aug-17/#2-sensitive-data-leakage-using-json
-
-
-
-
 
 
 
@@ -263,11 +308,12 @@ https://github.com/xm1k3/cent
 # Vulnerability Scanners
 git httpx -path /.git/config -mc 200 -ms '[remote "origin"]'
 
-Nrich
+
 Shodan https://github.com/reewardius/Shodan
 ```
 shodan domain example.com | awk '{print $3}' | httpx -silent | nuclei -t /nuclei-templates/
 ```
+Nrich
 Acunetix
 Burp Suite
 Nuclei 
@@ -285,14 +331,22 @@ Hunt4Spring https://github.com/redhuntlabs/Hunt4Spring
 Struts2Scanner https://github.com/1ight-2020/Struts2Scanner
 https://github.com/gustavorobertux/goc OpenAm Vulnerability Checker
 GobyVuls https://github.com/gobysec/GobyVuls
+BBScan -  https://github.com/lijiejie/BBScan
+Jira Scanners
+Confluence Scanners
+CloudEnum Scanners
 
+
+cariddi https://github.com/edoardottt/cariddi
+security headers - https://github.com/santoru/shcheck
+interesting headers - https://github.com/CasperGN/GoHead
 ```
 shodan domain example.com | awk '{print $3}' | httpx -silent | anew | xargs -I@ jaeles scan -c 100 -s /jaeles-signatures/ -u @
 ```
 
-
-
-
+```
+nuclei -l live-domains.txt -severity critical,high,medium -as -o result.txt
+```
 
 # SCA
 
@@ -310,18 +364,9 @@ shodan search org:"target" product:"Kubernetes" | awk '{print $3 ":" $2}' | http
 shodan search org:"target" port:"10250" | awk '{print $3 ":" $2}' | httpx -path /pods -content-length -status-code -title
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
 # HELP
 
 https://github.com/0xHJK/dumpall
+
+
+httpx -l targets.list -random-agent -t 100 -nc -fr -maxr 2 -fhr -maxhr 10 -p <PORTS> -ec -o livesites.result
