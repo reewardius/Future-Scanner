@@ -1,37 +1,144 @@
+Recon - Dorks - Ports - Fuzzing - Find Login Panels (default creds/register forms) - Vulnerability Scanners
+Recon - Dorks - Ports - Fuzzing - 403/401 bypass
+Recon - Error Messages/Debug endpoints
+Recon (git/svn/dorks) - Fuzzing - Vulnerability Scanners
+Recon - Vulnerability Scanners - OWASP
+Recon - Subdomains Takeover
+Recon - Login - Uploads Functionality - RCE
+Recon - Urls - JS Files Analyze (endpoints/secrets)
+Recon - Urls - SSRF testing (proxy, service, services, url, cache, connection, gf patterns, ,)
+Recon - Delete domain (only subs) - use buckets bruteforce techniques
+Secrets Recon - Github dorks - Google dorks
+Recon - Find Login Panels - SQLi (reg, login, forgot password, search queries)
+Recon - Find Login Panels - Register - Chaning passwords functionality (IDOR/CSRF)
+Recon - CSRF
+Recon - SSRF
+Recon - Upload/Download Functionality - IDOR
+Recon - Create/Modify/Delete Functionality - IDOR
+Recon - Register - Delete functionality
+Recon - Login Panels - 2 accounts - BAC (Authorize/Autorepeater)
+Recon - OWASP (BSCP Approach)
+Recon - Scan CORS - Finding Sensetive Endpoints
+Recon - ParamSpider - BurpSuite - Scan SQLi
+Recon - ParamSpider - BurpSuite - Scan XSS
+Recon - ParamSpider - BurpSuite - Scan Injections
+Recon - ParamSpider - BurpSuite - Scan High
+Recon - ParamSpider - BurpSuite - Scan Medium
+Recon - ParamSpider - BurpSuite - Scan Low
+
 # Fast Check
 /robots.txt , /crossdomain.xml /clientaccesspolicy.xml /sitemap.xml and /.well-known/security.txt /security.txt
 
+https://github.com/tomnomnom/hacks
+https://github.com/edoardottt/lit-bb-hack-tools
 
+for HOST in $(cat HOSTS.txt);do echo $(for ip in $(dig a $HOST +short); do whois $ip | grep -e "CIDR\|Organization" | tr -s " " | paste - -; done | uniq); done
+
+https://hackertarget.com/dns-lookup/
+https://bgpview.io/ip/62.141.14.33
+
+IP: 62.141.0.0/19 ASN AS13036
+
+https://github.com/hakluke/hakrevdns
+https://github.com/hakluke/hakip2host
 
 # Dorks
 
-Google Dorks - Cloud Storage:
+https://dorks.faisalahmed.me/#
 
-site:http://s3.amazonaws.com "target[.]com"
-site:http://blob.core.windows.net "target[.]com"
-site:http://googleapis.com "target[.]com"
-site:http://drive.google.com "target[.]com"
+site:http://ideone.com | site:http://codebeautify.org | site:http://codeshare.io | site:http://codepen.io | site:http://repl.it | site:http://justpaste.it | site:http://pastebin.com | site:http://jsfiddle.net | site:http://trello.com "target.com"
+
+
+Org:"target" pwd/pass/passwd/password
+
+"target. atlassian" pwd/pass/passwd/password
+"target. okta" pwd/pass/passwd/password
+"Jira. target" pwd/pass/passwd/password
+site:http://s3.amazonaws.com "target.com"
+site:http://blob.core.windows.net "target.com"
+site:http://googleapis.com "target.com"
+site:http://drive.google.com "target.com"
+site:"s3-external-1.amazonaws.com" and intext:CONFIDENTIAL
+site:"s3.amazonaws.com" and intext:CONFIDENTIAL
+site:"s3.dualstack.us-east-1.amazonaws.com" and intext:CONFIDENTIAL
+site:"s3-external-1.amazonaws.com" and intext:"TOP SECRET"
+site:"s3.amazonaws.com" and intext:"tlp:red"
+site:"s3.amazonaws.com" and intext:"tlp:amber"
+site:s3.amazonaws.com example
+site:s3.amazonaws.com example.com
+site:s3.amazonaws.com example-com
+site:s3.amazonaws.com com.example
+site:s3.amazonaws.com com-example
+site:s3.amazonaws.com filetype:xls password
+site:http://s3.amazonaws.com intitle:index.of.bucket
+site:http://amazonaws.com inurl:".s3.amazonaws.com/"
+s3 site:amazonaws.com filetype:log
+site:http://trello.com "aws.amazon.com" "password"
+* site:blob.core.windows.net “keyword” 
+* site:"blob.core.windows.net" and intext:"CONFIDENTIAL"
+* site:*.core.windows.net intext:"TLP:RED"
+* site:*.core.windows.net
+* site:*.core.windows.net +blob
+* site:*.core.windows.net +files -web -blob
+* site:*.core.windows.net -web
+* site:*.core.windows.net -web -blob -files
+* site:*.core.windows.net inurl:dsts.dsts
+* site:*.core.windows.net inurl:"term" -web
+* site:*.blob.core.windows.net ext:xls | ext:xlsx (login | password | username)
+* intext:connectionstring blob filetype:config
+* intext:accountkey windows.net filetype:xml
+* intext:storageaccountkey windows.net filetype:txt
+site:googleapis.com +commondatastorage
+site:.firebaseio.com "COMPANY NAME"
+inurl:bc.googleusercontent.com intitle:index of
+site:storage.googleapis.com
+Bucket list for a project - site:console.cloud.google.com/storage/browser
+Details for an object - site:console.cloud.google.com/storage/browser/_details
+site:firebasestorage.googleapis.com
+
+
+
+site:*.*.xx inurl:bug inurl:bounty site:*.*.xx.xx intext:security report reward site:*.*.xx intext:security report reward.
+
+
 
 https://www.infosecmatter.com/bug-bounty-tips-8-oct-14/#6-github-dorks-for-aws-jira-okta--secrets
 
 1. Собрать все дорки. По запросам. Найти в твиттере. Особенно интересуют по компаниям дорки и на интересные файлы.
+
+https://app.netlas.io/certs/?q=certificate.subject.organization:%22Tesla%20Inc%22&page=1
+
 2. Shodan dorks
 ssl.cert.subject.cn:"company.com"
 ssl:"company.com"
 hostname:google.com,facebook.com
 ssl.cert.subject.cn:google.com -HTTP
-
+- ssl:"target.com" 200 http.title:"dashboard"
+http.title:"example"
 
 
 
 3. Censys dorks
 https://t.me/shadow_group_tg/672
 https://t.me/shadow_group_tg/426
+services.tls.certificates.chain.subject_dn:example.com
+services.http.response.html_title: "example"
+
 
 
 4. https://github.com/mmpx12/zoomeye-cli
 
 # Github / Gitlab dorks
+https://github.com/techgaun/github-dorks
+https://github.com/hahwul/gitls
+https://github.com/aaydin-tr/svn-scanner
+https://github.com/junzhengca/gitscanner
+
+
+
+```
+gitls -l sample.lst | xargs -I % gitleaks --repo-url=% -v
+```
 
 1. Дорки по компании на СЦМ.
 
@@ -67,16 +174,19 @@ https://t.me/shadow_group_tg/660
 https://t.me/shadow_group_tg/662
 https://t.me/shadow_group_tg/37
 subdomains Google Analytics ID subdomains - https://github.com/dhn/udon
+subdomains https://github.com/rkpr0xy13/recon-boot.sh
 subdomains https://t.me/w3b_pwn/1889
 subdomains IP-Finder https://github.com/SecLab-CH/IP-Finder
 subdomains Lepus https://github.com/gfek/Lepus
 subdomains Shodan - https://github.com/SmoZy92/Shodomain
+subdomains https://github.com/gwen001/gitlab-subdomains
 subdomains Shodan - https://github.com/s4hm4d/shodanidb
 subdomains amass -  https://github.com/OWASP/Amass | amass enum -d vimeo.com | https://t.me/shadow_group_tg/302
 subdomains asnmap - https://github.com/projectdiscovery/asnmap
 subdomains assetfinder https://github.com/tomnomnom/assetfinder
 subdomains censys https://github.com/christophetd/censys-subdomain-finder
 subdomains cero https://github.com/glebarez/cero
+subdomains https://github.com/channyein1337/sonarbyte
 subdomains crt https://github.com/Nickguitar/GoSub
 subdomains csp recon domains - https://t.me/c/1345592925/2193
 subdomains dnsx - https://github.com/projectdiscovery/dnsx
@@ -118,8 +228,6 @@ subdomains Chaos
 target=$1
 wget -nv -nc http://chaos-data.projectdiscovery.io/$target.zip; unzip $target.zip ; cat *.txt | httpx -silent -threads 300 > $target.alive
 ```
-
-
 
 
 # Subdomain Port Scans
@@ -223,12 +331,10 @@ grep -r -E 'tokens|keys|api_keys' /path/to/folder
 ```
 
 
-
 Как?
 https://t.me/c/1345592925/2512
 https://t.me/c/1345592925/2347
 https://www.infosecmatter.com/bug-bounty-tips-5-aug-17/#2-sensitive-data-leakage-using-json
-
 
 
 # Recon URLS
@@ -321,6 +427,7 @@ Jaeles
 Afrog
 Xray
 scan4all https://github.com/hktalent/scan4all
+nacs https://github.com/u21h2/nacs
 Reconftw https://github.com/six2dez/reconftw
 Bbot https://github.com/blacklanternsecurity/bbot
 weblogicscanner https://github.com/0xn0ne/weblogicScanner
@@ -356,7 +463,7 @@ confused https://github.com/visma-prodsec/confused
 remic  https://github.com/knqyf263/remic
 hijagger https://github.com/firefart/hijagger
 Dependency-Confusion https://github.com/x1337loser/Dependency-Confusion
-
+dustilock https://github.com/Checkmarx/dustilock
 
 # Docker & Kubernetes
 ```
